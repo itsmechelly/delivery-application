@@ -41,7 +41,7 @@ PLUS - I added ThreadPoolTaskExecutor, to setMaxPoolSize, I know I didn't have t
 <br/>
 PLUS - I have already used @Transactional annotation for other reasons, but it gives extra support for thread safe running.
 
-
-Hope to hear from you soon,
-Thank you,
+<br/><br/><br/><br/>
+Hope to hear from you soon,<br/>
+Thank you,<br/>
 Chelly Izraelov
