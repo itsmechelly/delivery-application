@@ -42,7 +42,6 @@ public class DeliveryServiceImpl implements DeliveryService {
             String city = createDeliveryDto.getUserRequestDto().getUserAddress().getCity();
             log.info("deliveryService.bookDelivery: going to check timeslots limitation(max 2), current ={}", timeslot.getTimeslotLimit());
             if (timeslot.getTimeslotLimit() < 2) {
-//                    todo? && getDailyDeliveries().size() < 10) {
                 log.info("deliveryService.bookDelivery: checking if timeslot support delivery city location");
                 if (timeslot.getSupportedAddresses().equals(city)) {
                     log.info("deliveryService.bookDelivery: preparing new delivery data object, delivery statusEnum={}", StatusEnum.DELIVERY_BOOKED);
@@ -103,7 +102,6 @@ public class DeliveryServiceImpl implements DeliveryService {
             if (timeslotOptional.isPresent()) {
                 Timeslot timeslot = timeslotOptional.get();
                 log.info("deliveryService.cancelDelivery: going to update timeslot limitation in db");
-//                todo? timeslot.setDeliveriesCount(timeslot.getDeliveriesCount() - 1);
                 if (timeslot.getTimeslotLimit() >= 1) {
                     timeslotRepository.setTimeslotLimitById((timeslot.getTimeslotLimit() - 1), timeslot.getId());
                 }

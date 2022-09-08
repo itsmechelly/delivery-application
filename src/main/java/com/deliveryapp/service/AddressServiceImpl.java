@@ -21,7 +21,6 @@ import java.nio.charset.StandardCharsets;
 
 @Slf4j
 @Service
-//@Scope("prototype")
 public class AddressServiceImpl implements AddressService {
 
     @Value("${geo.api.fy.key}")
