@@ -33,9 +33,9 @@ To resolve the correct address I have used Geoapify.
 I have added a new column to Timeslot entity 'timeslotLimit'.
 
 • Concurrent Requests Validation -
-Well, Spring is Singleton by default, BUT not a thread safe.
-To handle concurrent requests I used @Version annotation in the Delivery entity.
-PLUS - I added ThreadPoolTaskExecutor, to setMaxPoolSize, I know I didn't have to add it, because I have already handled the 10 daily requests per day, but was thinking it would be nice to show you I can do it. (:
+Well, Spring is Singleton by default, BUT not a thread safe.<br/>
+To handle concurrent requests I used @Version annotation in the Delivery entity.<br/>
+PLUS - I added ThreadPoolTaskExecutor, to setMaxPoolSize, I know I didn't have to add it, because I have already handled the 10 daily requests per day, but was thinking it would be nice to show you I can do it. (:<br/>
 PLUS - I have already used @Transactional annotation for other reasons, but it gives extra support for thread safe running.
 
 
