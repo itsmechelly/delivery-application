@@ -11,29 +11,29 @@ I'm still on the time frame, but due to previous commitments I'm submitting at t
 
 Some Important Notes:
 
-• Spring WebFlux -<br/>
+1. Spring WebFlux -<br/>
 The project contains concurrent features, I think that the optimal project will be by using Spring WebFlux, but due to time limitations I decided to use Spring Boot.
 
-• Comments -<br/>
+2. Comments -<br/>
 In addition, due to the time limit - I didn't add comments.<br/>
 I believe in cleanCode that will be accessible for the team, just didn't have enough time.
 <br/><br/>
 BUT!<br/>
 I include a lot of logs - in which you can understand the flow of the code easily.<br/>
 
-• HolidayAPI -<br/>
-• Since 'holidayapi' does not support the current year for free - I hardcoded data of last year - '2021'.
+3. HolidayAPI -<br/>
+Since 'holidayapi' does not support the current year for free - I hardcoded data of last year - '2021'.
 
-• Gighub bucket4j -<br/>
+4. Gighub bucket4j -<br/>
 Regarding business capacity, to make sure that the system supports 10 deliveries per day, I used Github's amazing library called bucket4j.
 
-• Geoapify -<br/>
+5. Geoapify -<br/>
 To resolve the correct address I have used Geoapify.
 
-• Timeslots limitation -<br/>
+6. Timeslots limitation -<br/>
 I have added a new column to Timeslot entity 'timeslotLimit'.
 
-• Concurrent Requests Validation -<br/>
+7. Concurrent Requests Validation -<br/>
 Well, Spring is Singleton by default, BUT not a thread safe.<br/>
 To handle concurrent requests I used @Version annotation in the Delivery entity.<br/>
 <br/>
