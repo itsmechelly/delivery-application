@@ -35,13 +35,11 @@ I have added a new column to Timeslot entity 'timeslotLimit'.
 
 7. Concurrent Requests Validation -<br/>
 Well, Spring is Singleton by default, BUT not a thread safe.<br/>
-To handle concurrent requests I used @Version annotation in the Delivery entity.<br/>
-<br/>
-PLUS - I added ThreadPoolTaskExecutor, to setMaxPoolSize, I know I didn't have to add it, because I have already handled the 10 daily requests per day, but was thinking it would be nice to show you I can do it. (:<br/>
-<br/>
+To handle concurrent requests I used @Version annotation in the Delivery entity.<br/><br/>
+PLUS - I added ThreadPoolTaskExecutor, to setMaxPoolSize, I know I didn't have to add it, because I have already handled the 10 daily requests per day, but was thinking it would be nice to show you I can do it. (:<br/><br/>
 PLUS - I have already used @Transactional annotation for other reasons, but it gives extra support for thread safe running.
 
-<br/><br/><br/><br/>
+<br/><br/>
 Hope to hear from you soon,<br/>
 Thank you,<br/>
 Chelly Izraelov
