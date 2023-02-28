@@ -22,7 +22,6 @@ public class AddressController {
     @PostMapping("/resolve-address")
     public ResponseEntity<?> resolveAddress(@RequestBody String searchTerm) {
         try {
-
             return ResponseEntity.ok(addressService.resolveAddress(searchTerm));
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
